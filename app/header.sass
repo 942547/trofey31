@@ -76,65 +76,6 @@ body
 	margin-left: auto
 	font-size: 1.1em
 
-
-
-//theme banket
-
-.header_theme_banket
-	background-color: #fff
-	margin-top: 24px
-	box-shadow: 0 0 15px -3px
-
-.logo_theme_banket
-	position: relative
-
-.logo__bg_theme_banket
-	height: 100px
-	width: auto
-	margin: -24px 0 -27px
-
-.logo__content_theme_banket
-	// background-color: red
-	position: absolute
-	top: 0
-	width: 100%
-	text-align: center
-
-.logo__img_theme_banket
-	height: 40px
-	width: auto
-	margin-top: -8px
-
-.logo__text_theme_banket
-	margin-top: -4px
-	font-size: 20px
-
-.sf-mega,
-.sf-menu li
-	background-color: #ddd
-
-.section_home_theme_banket
-	background: #ddd url("img/section__bg_home_theme_banket.jpg") no-repeat
-	background-size: cover
-
-
-
-//Media Queries
-@media (min-width: 480px)
-		.toggle-mnu, #mobile-menu, html.mm-blocking #mm-blocker
-				display: none
-		html.mm-opening .mm-slideout
-				transform: translate(0px, 0px)
-@media (max-width: 480px)
-		.toggle-mnu
-				display: block
-		.sf-menu
-				display: none
-		.header
-				display: none
-		
-				
-//Toggle Menu http://codepen.io/agragregra/pen/bEbbmZ
 .toggle-mnu 
 		width: 28px
 		height: 28px
@@ -143,6 +84,7 @@ body
 		right: 15px
 		top: 0
 		z-index: 1
+
 
 		span:after, span:before 
 				content: ""
@@ -174,6 +116,63 @@ body
 		&.on span:after 
 				transform: rotate(-45deg) translate(6px, -7px)
 
+
+
+//theme banket
+.header_theme_banket
+	background-color: #fff
+	margin-top: 24px
+	box-shadow: 0 0 15px -3px
+
+.logo_theme_banket
+	position: relative
+
+.logo__bg_theme_banket
+	height: 100px
+	width: auto
+	margin: -24px 0 -27px
+
+.logo__content_theme_banket
+	// background-color: red
+	position: absolute
+	top: 0
+	width: 100%
+	text-align: center
+
+.logo__img_theme_banket
+	height: 40px
+	width: auto
+	margin-top: -8px
+
+.logo__text_theme_banket
+	margin-top: -4px
+	font-size: 20px
+
+.sf-menu_theme_banket
+	li
+		background-color: inherit
+		&:active,
+		&:focus,
+		&:hover,
+		.active
+			background-color: #ddd
+		a
+			color: inherit
+.sf-mega
+	background-color: #ddd
+
+.toggle-mnu_theme_banket
+	background-color: #ddd
+	width: 36px
+	height: 36px
+	padding: 8px 3px 3px
+	border-radius: 3px
+
+.section_home_theme_banket
+	background: #ddd url("img/section__bg_home_theme_banket.jpg") no-repeat
+	background-size: cover
+
+
 //Custom styles
 .clearfix::after
 		content: "."
@@ -181,3 +180,18 @@ body
 		height: 0
 		clear: both
 		visibility: hidden
+
+
+//Media Queries
+@media (min-width: 480px)
+		.toggle-mnu, #mobile-menu, html.mm-blocking #mm-blocker
+				display: none
+		html.mm-opening .mm-slideout
+				transform: translate(0px, 0px)
+@media (max-width: 480px)
+		.toggle-mnu
+				display: block
+		.sf-menu
+				display: none
+		.header
+				display: none
