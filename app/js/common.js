@@ -29,5 +29,11 @@ var api = $("#mobile-menu").data("mmenu");
 api.bind("closed", function () {
         $(".toggle-mnu").removeClass("on");
 });
+	
+	// Unslider
+	$('.my-slider').unslider({
+		autoplay: true,
+		arrows: false
+	});
 
 });
