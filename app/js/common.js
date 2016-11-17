@@ -36,10 +36,24 @@ api.bind("closed", function () {
       delay: 5000,              //  The delay between slide animations (in milliseconds)
       complete: function() {},  //  A function that gets called after every slide animation
       keys: false,               //  Enable keyboard (left, right) arrow shortcuts
-      dots: true,               //  Display dot navigation
+      // dots: false,               //  Display dot navigation
       fluid: true,             //  Support responsive design. May break non-responsive designs
       autoplay: true,
       arrows: false
+
     });
+
+	//  Let's say we want to use $.getScript to load our scripts for some reason
+	var scripts = [
+		'http://stephband.info/jquery.event.move/js/jquery.event.move.js',
+		'http://stephband.info/jquery.event.swipe/js/jquery.event.swipe.js'
+	];
+
+	$.getScript(scripts[0]);
+
+	//  Once our script is loaded, we can initSwipe to add swipe support
+	$.getScript(scripts[1], function() {
+		$('.banner').unslider('initSwipe');
+	});
 
 });
