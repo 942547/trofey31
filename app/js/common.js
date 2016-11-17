@@ -15,55 +15,33 @@ $(function() {
 		}
 	});
 
-$("#mobile-menu").mmenu({
+	$("#mobile-menu").mmenu({
 		extensions      : [ 'widescreen', 'theme-white', 'effect-menu-slide', 'pagedim-black' ],
 		navbar: {
-				title: "Меню"
+			title: "Меню"
 		}
-});
+	});
 
-$(".toggle-mnu").click(function() {
-	$(this).toggleClass("on");
-});
-var api = $("#mobile-menu").data("mmenu");
-api.bind("closed", function () {
-				$(".toggle-mnu").removeClass("on");
-});
-	
-	// Unslider
-	// $('.banner').unslider({
-	// 		speed: 500,               //  The speed to animate each slide (in milliseconds)
-	// 		delay: 5000,              //  The delay between slide animations (in milliseconds)
-	// 		complete: function() {},  //  A function that gets called after every slide animation
-	// 		keys: false,               //  Enable keyboard (left, right) arrow shortcuts
-	// 		// dots: false,               //  Display dot navigation
-	// 		fluid: true,             //  Support responsive design. May break non-responsive designs
-	// 		autoplay: true,
-	// 		arrows: false
+	$(".toggle-mnu").click(function() {
+		$(this).toggleClass("on");
+	});
+	var api = $("#mobile-menu").data("mmenu");
+	api.bind("closed", function () {
+		$(".toggle-mnu").removeClass("on");
+	});
 
-	// });
 
-	//  Let's say we want to use $.getScript to load our scripts for some reason
-	var scripts = [
-		'http://stephband.info/jquery.event.move/js/jquery.event.move.js',
-		'http://stephband.info/jquery.event.swipe/js/jquery.event.swipe.js'
-	];
-
-	$.getScript(scripts[0]);
-
-	//  Once our script is loaded, we can initSwipe to add swipe support
-	$.getScript(scripts[1], function() {
-		$('.banner').unslider({
-			speed: 500,               //  The speed to animate each slide (in milliseconds)
-			delay: 5000,              //  The delay between slide animations (in milliseconds)
-			// complete: function() {},  //  A function that gets called after every slide animation
-			keys: false,               //  Enable keyboard (left, right) arrow shortcuts
-			// dots: false,               //  Display dot navigation
-			fluid: true,             //  Support responsive design. May break non-responsive designs
-			autoplay: true,
-			arrows: false
-
-	}, 'destroySwipe');
+	//initialize swiper when document ready  
+	var mySwiper = new Swiper ('.swiper-container', {
+		pagination: '.swiper-pagination',
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev',
+		paginationClickable: true,
+		spaceBetween: 30,
+		centeredSlides: true,
+		autoplay: 5000,
+		// paginationType: 'progress',
+		autoplayDisableOnInteraction: false
 	});
 
 });
