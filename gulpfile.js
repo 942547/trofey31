@@ -55,9 +55,9 @@ gulp.task('libs', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/superfish/js/superfish.min.js',
 		'app/libs/mmenu/js/jquery.mmenu.all.min.js',
+		'http://stephband.info/jquery.event.move/js/jquery.event.move.js',
+		'http://stephband.info/jquery.event.swipe/js/jquery.event.swipe.js',
 		'app/libs/unslider/js/unslider-min.js',
-		// 'http://stephband.info/jquery.event.move/js/jquery.event.move.js',
-		// 'http://stephband.info/jquery.event.swipe/js/jquery.event.swipe.js',
 		// 'app/libs/magnific-popup/magnific-popup.min.js'
 		])
 		.pipe(concat('libs.min.js'))
