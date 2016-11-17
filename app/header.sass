@@ -171,11 +171,6 @@ body
 	padding: 8px 3px 3px
 	border-radius: 3px
 
-.section_home_theme_banket
-	// background: #ddd url("img/section__bg_home_theme_banket.jpg") no-repeat
-	// background-size: cover
-	position: relative
-
 //Custom styles
 .clearfix::after
 		content: "."
@@ -183,25 +178,6 @@ body
 		height: 0
 		clear: both
 		visibility: hidden
-
-
-//Media Queries
-@media (min-width: 960px)
-		.toggle-mnu, #mobile-menu, html.mm-blocking #mm-blocker
-				display: none
-		html.mm-opening .mm-slideout
-				transform: translate(0px, 0px)
-@media (max-width: 960px)
-		.toggle-mnu
-				display: block
-		.sf-menu
-				display: none
-		.header
-				display: none
-
-
-
-
 
 .banner
 	position: relative
@@ -226,7 +202,7 @@ body
 			// display: block
 			// float: left
 			// width: 33%
-			min-height: 600px
+			// min-height: 600px
 			// background-size: 100% 100%
 			height: 100vh
 			// box-shadow: inset 0 -3px 6px rgba(0, 0, 0, 0.1)
@@ -256,3 +232,17 @@ body
 			&.active
 				background: #fff
 				opacity: 1
+
+//Media Queries
+@media (min-width: 960px)
+		.toggle-mnu, #mobile-menu, html.mm-blocking #mm-blocker
+				display: none
+		html.mm-opening .mm-slideout
+				transform: translate(0px, 0px)
+@media (max-width: 960px)
+		.toggle-mnu
+				display: block
+		.sf-menu
+				display: none
+		.header
+				display: none

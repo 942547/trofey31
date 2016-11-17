@@ -31,17 +31,17 @@ api.bind("closed", function () {
 });
 	
 	// Unslider
-	$('.banner').unslider({
-			speed: 500,               //  The speed to animate each slide (in milliseconds)
-			delay: 5000,              //  The delay between slide animations (in milliseconds)
-			complete: function() {},  //  A function that gets called after every slide animation
-			keys: false,               //  Enable keyboard (left, right) arrow shortcuts
-			// dots: false,               //  Display dot navigation
-			fluid: true,             //  Support responsive design. May break non-responsive designs
-			autoplay: true,
-			arrows: false
+	// $('.banner').unslider({
+	// 		speed: 500,               //  The speed to animate each slide (in milliseconds)
+	// 		delay: 5000,              //  The delay between slide animations (in milliseconds)
+	// 		complete: function() {},  //  A function that gets called after every slide animation
+	// 		keys: false,               //  Enable keyboard (left, right) arrow shortcuts
+	// 		// dots: false,               //  Display dot navigation
+	// 		fluid: true,             //  Support responsive design. May break non-responsive designs
+	// 		autoplay: true,
+	// 		arrows: false
 
-	});
+	// });
 
 	//  Let's say we want to use $.getScript to load our scripts for some reason
 	var scripts = [
@@ -53,7 +53,17 @@ api.bind("closed", function () {
 
 	//  Once our script is loaded, we can initSwipe to add swipe support
 	$.getScript(scripts[1], function() {
-		$('.banner').unslider('initSwipe');
+		$('.banner').unslider({
+			speed: 500,               //  The speed to animate each slide (in milliseconds)
+			delay: 5000,              //  The delay between slide animations (in milliseconds)
+			// complete: function() {},  //  A function that gets called after every slide animation
+			keys: false,               //  Enable keyboard (left, right) arrow shortcuts
+			// dots: false,               //  Display dot navigation
+			fluid: true,             //  Support responsive design. May break non-responsive designs
+			autoplay: true,
+			arrows: false
+
+	}, 'destroySwipe');
 	});
 
 });
