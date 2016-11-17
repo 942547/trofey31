@@ -36,7 +36,7 @@ api.bind("closed", function () {
       delay: 5000,              //  The delay between slide animations (in milliseconds)
       complete: function() {},  //  A function that gets called after every slide animation
       keys: false,               //  Enable keyboard (left, right) arrow shortcuts
-      dots: false,               //  Display dot navigation
+      dots: true,               //  Display dot navigation
       fluid: true,             //  Support responsive design. May break non-responsive designs
       autoplay: true,
       arrows: false
