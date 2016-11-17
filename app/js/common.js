@@ -39,7 +39,7 @@ $(function() {
 		paginationClickable: true,
 		spaceBetween: 30,
 		centeredSlides: true,
-		autoplay: 5000,
+		autoplay: 7000,
 		loop: true,
 		autoplayDisableOnInteraction: false
 	});
