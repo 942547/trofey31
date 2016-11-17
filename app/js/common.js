@@ -40,7 +40,7 @@ $(function() {
 		spaceBetween: 30,
 		centeredSlides: true,
 		autoplay: 5000,
-		// paginationType: 'progress',
+		loop: true,
 		autoplayDisableOnInteraction: false
 	});
 
