@@ -41,6 +41,7 @@ $(function() {
 		centeredSlides: true,
 		autoplay: 7000,
 		loop: true,
+		keyboardControl: true,
 		autoplayDisableOnInteraction: false
 	});
 
