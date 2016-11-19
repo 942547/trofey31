@@ -37,7 +37,7 @@ $(function() {
 		nextButton: '.swiper-button-next',
 		prevButton: '.swiper-button-prev',
 		paginationClickable: true,
-		spaceBetween: 50,
+		// spaceBetween: 50,
 		centeredSlides: true,
 		autoplay: 7000,
 		loop: true,
