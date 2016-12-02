@@ -15,13 +15,6 @@ $(function() {
 		}
 	});
 
-	$("#mobile-menu").mmenu({
-		extensions      : [ 'widescreen', 'theme-white', 'effect-menu-slide', 'pagedim-black' ],
-		navbar: {
-			title: "Меню"
-		}
-	});
-
 	$(".toggle-mnu").click(function() {
 		$(this).toggleClass("on");
 	});
