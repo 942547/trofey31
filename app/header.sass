@@ -8,11 +8,15 @@
 @import "libs/swiper/css/swiper.min.css"
 @import "libs/popup/css/magnific-popup.css"
 
-html
+html,
+body,
+header
 	height: 100%
 
+#mobile-menu
+	z-index: 2
+
 body
-	height: 100%
 	font-family: "Nikodecs"
 	font-size: 18px
 
@@ -57,11 +61,11 @@ h2,
 	min-height: 600px
 	height: 100%
 
-.header
+.nav-wrap
 	position: fixed
 	top: 0
 	width: 100%
-	padding: 0 10px
+	padding: 0 20px
 	z-index: 2
 
 
@@ -156,7 +160,7 @@ h2,
 
 
 //theme banket
-.header_theme_banket
+.nav-wrap_theme_banket
 	background-color: #fff
 	margin-top: 24px
 	box-shadow: 0 0 15px -3px
@@ -226,7 +230,7 @@ h2,
 				display: block
 		.sf-menu
 				display: none
-		.header
+		.nav-wrap
 				display: none
 
 
